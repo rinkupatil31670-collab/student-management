@@ -19,6 +19,10 @@ public class StudentController {
             Map.of("id", 3, "name", "Amit Joshi", "course", "BSc IT")
         );
     }
+    @GetMapping("/hello")
+    public String hello() {
+        return "Deployed by GitHub Actions";
+    }
 
     @GetMapping("/")
     public String home() {
